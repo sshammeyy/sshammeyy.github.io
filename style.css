@@ -1,0 +1,77 @@
+/* Existing styles */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: rgb(231, 137, 122);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#image-container {
+    /* This container will hold the images */
+}
+
+#question {
+    font-family: 'Arial', cursive;
+    font-size: 52px;
+}
+
+#options {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 26px;
+    font-family: 'Arial';
+    color: rgb(219, 216, 216);
+    border: none;
+    cursor: pointer;
+}
+
+/* Make one button red */
+button:first-of-type {
+    background-color: #B7410E;
+}
+
+/* Make another button red */
+button:last-of-type {
+    background-color:rgb(95, 116, 59);
+}
+
+/* New styles for spinning the Rust GIF */
+.spin {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    width: 500px; /* Adjust size as needed */
+    height: auto;
+    animation: spin 2s linear infinite; /* Spinning effect */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Center the image container */
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px; /* Adjust height as needed */
+}
+
